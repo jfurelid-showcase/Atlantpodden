@@ -256,12 +256,13 @@
   /* ── FOOTER ── */
   footer {
     background: #0A1628; color: rgba(200,220,240,.6);
-    padding: 48px 6vw; margin-top: 80px;
+    padding: 48px 6vw;
     font-size: 13px; line-height: 1.7;
+    border-top: 1px solid rgba(255,255,255,.06);
   }
   .footer-inner {
     max-width: 1200px; margin: 0 auto;
-    display: grid; grid-template-columns: 1fr 1fr;
+    display: flex; justify-content: flex-start;
     gap: 40px; align-items: start;
   }
   .footer-brand {
@@ -269,7 +270,7 @@
     font-size: 20px; color: #fff; margin-bottom: 8px; font-weight: 600;
   }
   .footer-disclaimer { color: rgba(255,255,255,.4); font-size: 12px; line-height: 1.65; }
-  .footer-links { display: flex; flex-direction: column; gap: 8px; align-items: flex-end; }
+  .footer-links { display: flex; flex-direction: column; gap: 8px; align-items: flex-start; }
   .footer-links a {
     color: rgba(255,255,255,.55); text-decoration: none;
     font-size: 13px; transition: color .2s;
@@ -384,23 +385,24 @@
     <a href="atlant-episode-1.html" class="episode-card featured fade-in">
       <div>
         <span class="latest-badge">SENASTE AVSNITTET</span>
-        <div class="episode-date">OKTOBER 2025</div>
-        <div class="episode-title">Atlantpodden gör comeback med genomgångar av Atlant Högräntefond och Atlant Räntefond Stabil</div>
-        <p class="episode-desc">Ny kreditförvaltare Carl-Johan Lagercrantz (CJ) presenterar sig och går igenom fondernas unika derivatstrategi och marknadsläget.</p>
+        <div class="episode-date">MARS 2026</div>
+        <div class="episode-title">Inflationsoro – knackar 2022 på dörren igen?</div>
+        <p class="episode-desc">[Platshållare] Avsnittsinnehåll uppdateras inför publicering.</p>
         <div class="episode-meta">
-          <span class="episode-guest">Carl-Johan Lagercrantz &amp; Peter Beckman</span>
-          <span class="episode-duration">30+ min</span>
+          <span class="episode-guest">Atlant Förvaltare</span>
+          <span class="episode-duration">14 min</span>
         </div>
         <div class="episode-tags">
-          <span class="episode-tag">HIGH YIELD</span>
-          <span class="episode-tag">DERIVAT</span>
-          <span class="episode-tag">RÄNTEMARKNAD</span>
+          <span class="episode-tag">INFLATION</span>
+          <span class="episode-tag">FED</span>
+          <span class="episode-tag">RIKSBANKEN</span>
+          <span class="episode-tag">PENNINGPOLITIK</span>
         </div>
       </div>
       <div>
         <div class="featured-player">
           <span class="featured-player-label">🎙 LYSSNA</span>
-          <iframe src="https://embed.acast.com/$/69c7a1d726c1fb9c07186a7e/69c7a249f4bf09c5992fc9c1?" frameBorder="0" width="100%" height="110px" allow="autoplay"></iframe>
+          <iframe src="https://embed.acast.com/$/excalibur-podden/69bafebc723e6260741b7d84?" frameBorder="0" width="100%" height="110px" allow="autoplay"></iframe>
         </div>
       </div>
     </a>
@@ -425,22 +427,9 @@
   </div>
 </section>
 
-<footer>
-  <div class="footer-inner">
-    <div>
-      <div class="footer-brand">Atlantpodden</div>
-      <p style="margin-bottom:16px;">En podd om kreditmarknaden och Atlant Fonders förvaltning med återkommande intervjuer med fondbolagets förvaltare.</p>
-      <p class="footer-disclaimer">Historisk avkastning är ingen garanti för framtida resultat. Investerat kapital kan både öka och minska i värde. Informationen på denna sida utgör inte investeringsrådgivning.</p>
-    </div>
-    <div class="footer-links">
-      <a href="https://www.atlantfonder.se/" target="_blank">atlantfonder.se ↗</a>
-      <a href="https://www.atlantfonder.se/monthly-report/" target="_blank">Månadsrapport ↗</a>
-    </div>
-  </div>
-  <div style="max-width:1200px;margin:24px auto 0;padding-top:20px;border-top:1px solid rgba(255,255,255,0.08);">
-    <span style="font-size:11px;color:#FFFFFF;letter-spacing:.04em;">© 2026 Furelid Communications. All rights reserved.</span>
-  </div>
-</footer>
+
+
+<script>
   const observer = new IntersectionObserver(function(entries) {
     entries.forEach(function(e) {
       if (e.isIntersecting) e.target.classList.add('visible');
